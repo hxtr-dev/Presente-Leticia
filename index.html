@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feliz aniversário, Letícia ♥</title>
+  <meta name="description" content="Um presente para a Letícia, 04.11">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23c04bff' d='M16 28C6 21 2 15 2 10a7 7 0 0 1 14-2 7 7 0 0 1 14 2c0 5-4 11-14 18z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <!-- Enxame de corações (fundo vivo do site inteiro) -->
+  <canvas id="swarm" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="glitch" aria-hidden="true"></div>
+
+  <!-- ============ ABERTURA: ENVELOPE ============ -->
+  <section id="intro">
+    <div class="intro-hud intro-hud--tl mono">PRESENTE Nº 01 <span class="dot"></span> PARA: LETÍCIA VERÔNICA SILVA</div>
+    <div class="intro-hud intro-hud--tr mono">04 · 11</div>
+
+    <div class="envelope-wrap">
+      <div class="envelope" id="envelope">
+        <div class="env-back"></div>
+        <div class="env-letter">
+          <span class="mono">para</span>
+          <strong>Letícia</strong>
+          <span class="heart-line">♥ ♥ ♥</span>
+        </div>
+        <div class="env-front"></div>
+        <div class="env-flap"></div>
+        <button class="seal-btn" id="openBtn" type="button">Feliz aniversário</button>
+      </div>
+      <p class="intro-hint">clique no botão para receber seu presente</p>
+    </div>
+  </section>
+
+  <!-- ============ SITE (aparece depois do envelope) ============ -->
+  <main id="site" aria-hidden="true">
+
+    <header class="topbar">
+      <div class="brand mono"><span class="brand-heart">♥</span> leticia.04.11</div>
+      <nav class="mono">
+        <a href="#hero">Início</a>
+        <a href="#carta1">Carta</a>
+        <a href="#galeria">Nós</a>
+        <a href="#carta2">Pra você</a>
+        <a href="#final">Fim</a>
+      </nav>
+      <div class="now-playing mono">
+        <span class="np-label">tocando agora</span>
+        <span class="np-song">The First Time · Damiano David</span>
+      </div>
+    </header>
+
+    <!-- 1. HERO -->
+    <section class="scene" id="hero" data-scene>
+      <div class="sticky">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow mono"><span class="tick"></span> 04 de novembro <span class="dot"></span> o seu dia</p>
+            <h1 class="hero-title">
+              <span class="line"><span class="split">Feliz aniversário,</span></span>
+              <span class="line"><em class="split accent">Letícia.</em></span>
+            </h1>
+            <p class="hero-sub">Um site inteiro feito à mão, linha por linha, só pra você. Role devagar: cada pedacinho daqui foi pensado no seu sorriso.</p>
+            <div class="hero-cta">
+              <a href="#carta1" class="btn-ghost mono">começar ↓</a>
+              <span class="mono muted">role para descer</span>
+            </div>
+          </div>
+          <figure class="hero-photo frame" data-parallax>
+            <img src="fotos/09.jpg" alt="Letícia de vestido azul">
+            <span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
+            <figcaption class="mono">IMG_09 · a mais linda do mundo</figcaption>
+          </figure>
+        </div>
+        <div class="stats">
+          <div class="stat"><span class="stat-label mono">dia</span><span class="stat-num" data-scramble="04">04</span></div>
+          <div class="stat"><span class="stat-label mono">mês</span><span class="stat-num" data-scramble="11">11</span></div>
+          <div class="stat"><span class="stat-label mono">motivos pra te amar</span><span class="stat-num" data-scramble="∞">∞</span></div>
+          <div class="stat"><span class="stat-label mono">dona do meu coração</span><span class="stat-num" data-scramble="01">01</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CARTA 1 (texto do Elvis) -->
+    <section class="scene" id="carta1" data-scene>
+      <div class="sticky">
+        <div class="letter-grid">
+          <div class="letter-photos">
+            <figure class="frame tilt-l"><img src="fotos/02.jpg" alt="Nós dois juntinhos"><span class="corner c1"></span><span class="corner c3"></span></figure>
+            <figure class="frame tilt-r"><img src="fotos/07.jpg" alt="Nossa selfie"><span class="corner c2"></span><span class="corner c4"></span></figure>
+          </div>
+          <div class="letter-body">
+            <p class="eyebrow mono"><span class="tick"></span> carta nº 01</p>
+            <h2 class="section-title">Meu amor,</h2>
+            <p class="reveal-text" data-reveal>não consegui pensar em nada mais romântico de presente como esse site, onde eu envolvo tudo aqui que eu aprendi ao longo da minha carreira de garoto de programa, quero mostrar pra vc que não há mais nada especial e algo que eu devo dedicar nessa minha vida a não ser a sua alegria e sua felicidade, não consigo pensar em algo mais romântico e belo quanto sua beleza e seu espírito, me movo de acordo com cada respiro seu e suas palavras e emoções me movem cada dia mais!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. GALERIA HORIZONTAL -->
+    <section class="scene" id="galeria" data-scene>
+      <div class="sticky">
+        <div class="gallery-head">
+          <p class="eyebrow mono"><span class="tick"></span> arquivo nº 02 <span class="dot"></span> nós</p>
+          <h2 class="section-title">Pedacinhos <em class="accent">da gente.</em></h2>
+        </div>
+        <div class="track" id="track">
+          <figure class="card frame"><img src="fotos/01.jpg" alt="Letícia" loading="lazy"><figcaption><span class="mono">01</span> esse olhar me desmonta</figcaption></figure>
+          <figure class="card frame"><img src="fotos/05.jpg" alt="Nós no provador" loading="lazy"><figcaption><span class="mono">02</span> você e eu, sempre</figcaption></figure>
+          <figure class="card frame"><img src="fotos/03.jpg" alt="Letícia na escada rolante" loading="lazy"><figcaption><span class="mono">03</span> linda até de costas</figcaption></figure>
+          <figure class="card frame"><img src="fotos/10.jpg" alt="Nós dois arrumados" loading="lazy"><figcaption><span class="mono">04</span> o casal mais bonito</figcaption></figure>
+          <figure class="card frame"><img src="fotos/04.jpg" alt="Letícia de blusa vermelha" loading="lazy"><figcaption><span class="mono">05</span> o vermelho é seu</figcaption></figure>
+          <figure class="card frame"><img src="fotos/08.jpg" alt="Letícia no restaurante" loading="lazy"><figcaption><span class="mono">06</span> meu lugar favorito é do seu lado</figcaption></figure>
+          <figure class="card frame"><img src="fotos/06.jpg" alt="Letícia na avenida" loading="lazy"><figcaption><span class="mono">07</span> o mundo fica pequeno perto de você</figcaption></figure>
+          <div class="card card-end"><span class="big-heart">♥</span><p>e ainda vem<br><em class="accent">muito mais.</em></p></div>
+        </div>
+        <div class="progress mono"><span id="galCount">01</span> / 08 <span class="bar"><i id="galBar"></i></span></div>
+      </div>
+    </section>
+
+    <!-- 4. CARTA 2 -->
+    <section class="scene" id="carta2" data-scene>
+      <div class="sticky">
+        <div class="letter2-grid">
+          <div class="stack">
+            <figure class="frame stack-img is-on"><img src="fotos/10.jpg" alt=""><span class="corner c1"></span><span class="corner c4"></span></figure>
+            <figure class="frame stack-img"><img src="fotos/07.jpg" alt=""><span class="corner c1"></span><span class="corner c4"></span></figure>
+            <figure class="frame stack-img"><img src="fotos/05.jpg" alt=""><span class="corner c1"></span><span class="corner c4"></span></figure>
+          </div>
+          <div class="paras">
+            <p class="eyebrow mono"><span class="tick"></span> carta nº 02 <span class="dot"></span> <span id="paraCount">01</span> / 03</p>
+            <div class="para is-on">
+              <h3>Feliz aniversário, <em class="accent">minha vida.</em></h3>
+              <p>Hoje o dia é seu, mas o presente quem ganhou fui eu, no dia em que você entrou na minha vida. Cada foto deste site guarda um pedacinho da nossa história: as risadas sem motivo, os passeios que viraram lembranças, os abraços que dizem tudo sem precisar de palavra nenhuma. Cada linha que eu escrevi aqui foi pensando no seu sorriso, porque ele é a coisa mais bonita que eu já vi.</p>
+            </div>
+            <div class="para">
+              <h3>Você é a <em class="accent">calma.</em></h3>
+              <p>Você é a calma no meio da correria, o lugar onde eu me sinto em casa e o motivo de eu querer ser alguém melhor todos os dias. Admiro a sua força, o seu jeito, o seu coração enorme e a forma como você ilumina qualquer lugar onde chega. Ao seu lado tudo fica mais leve, mais colorido e mais verdadeiro.</p>
+            </div>
+            <div class="para">
+              <h3>Que venha o seu <em class="accent">novo ano.</em></h3>
+              <p>Que esse novo ano da sua vida venha cheio de conquistas, de paz e de muitos sonhos realizados. Eu prometo estar ao seu lado em cada um deles, segurando a sua mão, comemorando cada vitória e te apoiando em cada desafio. Obrigado por me escolher, por me ensinar tanto e por fazer de mim o cara mais sortudo do mundo. Hoje o mundo celebra você, mas eu te celebro em todos os dias que tenho a sorte de te ter comigo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FINAL -->
+    <section class="scene" id="final" data-scene>
+      <div class="sticky">
+        <div class="final-inner">
+          <p class="eyebrow mono"><span class="tick"></span> fim? nunca.</p>
+          <h2 class="final-title"><span class="split">Eu te amo,</span><br><em class="split accent">Letícia.</em></h2>
+          <p class="final-sub">Eu te amo.</p>
+          <p class="sign mono">com todo o meu coração · Elvis · 04.11</p>
+          <button class="btn-ghost mono" id="replay" type="button">♥ fazer os corações dançarem de novo</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Player do Spotify -->
+  <div id="player" class="player">
+    <div class="player-head mono"><span class="eq"><i></i><i></i><i></i></span> nossa música</div>
+    <div id="spotify-embed"></div>
+  </div>
+
+  <!-- Aviso para celular (o site é feito para PC/notebook) -->
+  <div id="mobile-note">
+    <div>
+      <span class="big-heart">♥</span>
+      <p>Esse presente foi feito para ser aberto no <strong>computador ou notebook</strong>.</p>
+      <p class="mono muted">abra este mesmo link no PC, meu amor</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+</body>
+</html>
